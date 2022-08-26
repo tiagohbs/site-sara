@@ -1,0 +1,102 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --fonte-texto: 'Rubik Maze', cursive;;
+    --fonte-h1:'Aboreto', cursive;
+}
+
+body{
+    background-color: rgba(225, 244, 244, 0.34);
+}
+header{
+    
+    height: 300px;
+    font-family:var(--fonte-h1); 
+    border: 3px solid black;
+
+    
+}
+header h1{
+    margin:auto;
+    text-align: center;
+    color: red;
+}
+nav{
+    border: 3px dashed red;
+    text-align: center;
+ 
+}
+nav a {
+    text-decoration: none;
+}
+nav ul{
+    gap: 50px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: green;
+}
+section{
+    margin:10px 0px 10px 10px;
+    display: relative;
+    
+    width: 98vw;
+    height: 70vh;
+    font-family: var(--fonte-texto);
+    font-size: large;
+}
+#sec1 {
+    background-color: aliceblue;
+    
+    display: absolute;xt-align: center;
+    align-items: center;
+    margin: auto;
+    margin:10px 0px 10px 10px;
+    color: aliceblue;
+    background-image: url('../imagens/pexels-aaditya-arora-592753.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+#sec2 {
+    
+    background-color: rgb(20, 115, 198);
+    
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin:10px 0px 10px 10px;
+    background-image: url('../imagens/pexels-ali-arapoğlu-2112054.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#sec3 {
+    background-color: rgb(31, 165, 58);
+    
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin:10px 0px 10px 10px;
+    background-image: url('../imagens/pexels-sergio-souza-2613407.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+.texta{
+    
+}
