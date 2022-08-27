@@ -1,102 +1,182 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
 }
 :root{
-    --fonte-texto: 'Rubik Maze', cursive;;
+    --fonte-texto:  'Ubuntu', sans-serif;
     --fonte-h1:'Aboreto', cursive;
+    --corDoCorpo:red;
+    --corDoHeader:rgb(0, 0, 0);
+    --corDoTexto1:White;
+    --corDoText2:white;
+    --coDoFundo1:black;
+    --CorDoFundo2:black;
 }
 
 body{
+    min-height: 100vh;
+    width: 100vw;
     background-color: rgba(225, 244, 244, 0.34);
+    margin-right: -10px;
+}
+main{
+    width: 100vw;
+    
 }
 header{
     
-    height: 300px;
+    background-color: var(--corDoHeader);
+    height: 20vh;
     font-family:var(--fonte-h1); 
-    border: 3px solid black;
+    
 
     
 }
 header h1{
-    margin:auto;
     text-align: center;
-    color: red;
+    color: var(--fonte-h1);
 }
 nav{
-    border: 3px dashed red;
-    text-align: center;
- 
+    width: 100vw;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--corDoHeader);
 }
+
 nav a {
     text-decoration: none;
+    
 }
 nav ul{
-    gap: 50px;
+    text-align: center;
+    
+}
+nav li{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-left: 250px; */
+    
+    border-radius: 10px;    
+    display: inline;
+    
 }
 nav a:hover{
-    text-decoration: underline;
-    color: green;
+    background-color: green;
 }
+nav a::after{
+    content: '\1F4D6';
+}
+   
+
 section{
-    margin:10px 0px 10px 10px;
-    display: relative;
-    
-    width: 98vw;
-    height: 70vh;
+    margin:0;
+    position:relative;
+    width: 100vw;
+    height: 80vh;
     font-family: var(--fonte-texto);
-    font-size: large;
+    font-size: 1em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    
 }
 #sec1 {
+
     background-color: aliceblue;
-    
-    display: absolute;xt-align: center;
-    align-items: center;
-    margin: auto;
-    margin:10px 0px 10px 10px;
+    text-align: center;
     color: aliceblue;
     background-image: url('../imagens/pexels-aaditya-arora-592753.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    box-shadow: inset 5px 5px 5px  black;
     background-attachment: fixed;
+    background-size: cover;
+    
     
 }
 #sec2 {
-    
+
+    box-shadow: inset 5px 5px 5px  black;
     background-color: rgb(20, 115, 198);
-    
     color: aliceblue;
     text-align: center;
-    align-items: center;
-    margin: auto;
-    margin:10px 0px 10px 10px;
     background-image: url('../imagens/pexels-ali-arapoğlu-2112054.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
+    
     
 }
 #sec3 {
+
     background-color: rgb(31, 165, 58);
-    
     color: aliceblue;
     text-align: center;
-    align-items: center;
-    margin: auto;
-    margin:10px 0px 10px 10px;
     background-image: url('../imagens/pexels-sergio-souza-2613407.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    box-shadow: inset 5px 5px 5px 0px  black;
     background-attachment: fixed;
+    background-size: cover;
 
 
 }
-.texta{
+#sec4{
+    background-color: rgba(113, 8, 8, 0.104);
+    text-align: right;
+
+}
+#sec4 article {
+    text-align: right;
+}
+.texta p{
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.696);
     
+    max-height: 50vh;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    max-width: 50vh;
+}
+.textb p{
+    
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.343);
+    max-width: 50vh;
+    max-height: 50vh;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;;
+
+}
+footer{
+    background-color: brown;
+    color:white;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: greenyellow;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+.gradiente{
+    background:rgba(255,0,89,1);
+    background: linear-gradient(45deg, rgb(161, 143, 7)0%, rgb(28, 144, 7)33%,rgba(161, 143, 7)66%,rgb(28, 144, 7)33%,rgba(161, 143, 7)66%,rgba(28, 144, 7)100%);
+    background-size: 400% 400%;
+    animation:🌈 5s reverse infinite;
+
+}
+@keyframes 🌈{
+    0%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 15% 100%;
+    }
 }
